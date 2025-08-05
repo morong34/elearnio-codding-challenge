@@ -23,7 +23,7 @@
           @for (item of _cartService.cartItemsValues(); track item.product.id) {
             <div class="cart-item">
               <div class="item-image">
-                <img [src]="item.product.image" [alt]="item.product.title" loading="lazy">
+                <img [ngSrc]="item.product.image" width="1" height="1" [alt]="item.product.title" loading="lazy">
               </div>
               <div class="item-details">
                 <h3>{{ item.product.title }}</h3>

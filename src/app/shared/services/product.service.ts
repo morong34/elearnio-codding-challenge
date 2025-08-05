@@ -19,7 +19,6 @@ export class ProductService {
     return of(mockProducts).pipe(
       tap(products => {
         this.products.set(products);
-        debugger;
 
         const uniqueCategories = [...new Set(products.map(p => p.category))];
         this.categories.set(uniqueCategories);

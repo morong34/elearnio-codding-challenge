@@ -1,12 +1,11 @@
 import {Component, inject, signal} from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { FormsModule } from '@angular/forms';
-
 import { CartService, CartItem } from '../../shared/services/cart.service';
 
 @Component({
@@ -19,7 +18,8 @@ import { CartService, CartItem } from '../../shared/services/cart.service';
     MatBadgeModule,
     MatSidenavModule,
     MatListModule,
-    FormsModule
+    FormsModule,
+    NgOptimizedImage
   ],
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
